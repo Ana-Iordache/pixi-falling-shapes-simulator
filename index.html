@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reevo assignemnt</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="importmap">
+      {
+        "imports": {
+          "pixi.js": "https://unpkg.com/pixi.js@8.x/dist/pixi.mjs"
+        }
+      }
+    </script>
+</head>
+
+<body>
+  <div class="statistics">
+    <div class="statistics-box">
+      <div class="statistics-label">NUMBER OF CURRENT SHAPES</div>
+      <span class="statistics-value" id="current-shapes-val">0</span>
+    </div>
+    <div class="statistics-box">
+      <div class="statistics-label">SURFACE AREA OCCUPIED</div>
+      <span class="statistics-value" id="surface-area-val">0 px²</span>
+    </div>
+  </div>
+
+  <div id="wrapper"></div>
+
+  <div class="controls">
+    <div class="control-group">
+      <label>Shapes per second</label>
+      <div class="buttons">
+        <button id="shapes-decr">-</button>
+        <span id="shapes-val">1</span>
+        <button id="shapes-incr">+</button>
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <label>Gravity value</label>
+      <div class="buttons">
+        <button id="gravity-decr">-</button>
+        <span id="gravity-val">2</span>
+        <button id="gravity-incr">+</button>
+      </div>
+    </div>
+  </div>
+  <script src="/app.js" type="module"></script>
+</body>
+
+</html>
